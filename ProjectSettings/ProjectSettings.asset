@@ -225,8 +225,8 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: C:/Unity/Framework/Certificates/com.xerabeth.snakazoid.keystore
+  AndroidKeyaliasName: com.xerabeth.snakazoid
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
   AndroidEnableTango: 0
