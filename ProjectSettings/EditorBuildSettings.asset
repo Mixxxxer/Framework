@@ -6,5 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/BootStrapper.unity
-    guid: ea68691ba40eada4e965b6eacd955f51
+    path: Assets/Scenes/Atomic Nucleus Scene.unity
+    guid: 2379a9ee20efc4695a5c8ed34c8441fe
