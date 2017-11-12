@@ -4,6 +4,14 @@ using UnityEngine.UI;
 [RequireComponent(typeof(FPSCounter))]
 public class FPSDisplay : MonoBehaviour
 {
+    #region Public Members
+
+    public Text FrameRateAverageLabel;
+
+    #endregion
+
+    #region Private Members
+
     [System.Serializable]
     private struct FPSColor
     {
@@ -24,14 +32,16 @@ public class FPSDisplay : MonoBehaviour
         "80", "81", "82", "83", "84", "85", "86", "87", "88", "89",
         "90", "91", "92", "93", "94", "95", "96", "97", "98", "99"
     };
+    
 
-  
-    public Text highestFPSLabel, averageFPSLabel, lowestFPSLabel;
+    [SerializeField]
+    private FPSColor[] coloring;
 
-	[SerializeField]
-	private FPSColor[] coloring;
+    private FPSCounter fpsCounter;
 
-	FPSCounter fpsCounter;
+    #endregion
+
+    #region Public Methods
 
     public void Awake()
     {
@@ -40,21 +50,27 @@ public class FPSDisplay : MonoBehaviour
 
     public void Update()
     {
-        Display(highestFPSLabel, fpsCounter.HighestFPS);
-        Display(averageFPSLabel, fpsCounter.AverageFPS);
-        Display(lowestFPSLabel, fpsCounter.LowestFPS);
+        Display(FrameRateAverageLabel, fpsCounter.FrameRateAverage);
     }
+
+    #endregion
+
+    #region Private Methods
+
+    private int coloringLoop;
 
     private void Display(Text label, int fps)
     {
         label.text = StringsFrom00To99[Mathf.Clamp(fps, 0, 99)];
-        for (int i = 0; i < coloring.Length; i++)
+        for (coloringLoop = 0; coloringLoop < coloring.Length; coloringLoop++)
         {
-            if (fps >= coloring[i].minimumFPS)
+            if (fps >= coloring[coloringLoop].minimumFPS)
             {
-                label.color = coloring[i].color;
+                label.color = coloring[coloringLoop].color;
                 break;
             }
         }
     }
+
+    #endregion
 }
