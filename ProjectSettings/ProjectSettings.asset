@@ -148,8 +148,8 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.xerabeth.snakazoid
-    iOS: com.xerabeth.snakazoid
+    Android: com.xerabeth.magnapillar
+    iOS: com.xerabeth.magnapillar
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 16
@@ -219,7 +219,7 @@ PlayerSettings:
   metalAPIValidation: 1
   iOSRenderExtraFrameOnPause: 0
   appleDeveloperTeamID: 
-  iOSManualSigningProvisioningProfileID: 8e6dfb90-1591-42dd-a894-214a61eecf92
+  iOSManualSigningProvisioningProfileID: 132de4c9-2ba5-4544-ad8e-1369db1d6b47
   tvOSManualSigningProvisioningProfileID: 
   appleEnableAutomaticSigning: 0
   AndroidTargetDevice: 0
