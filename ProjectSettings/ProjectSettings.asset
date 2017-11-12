@@ -12,7 +12,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Xerabeth
-  productName: Snakazoid
+  productName: Magnapillar
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -608,7 +608,7 @@ PlayerSettings:
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
   cloudProjectId: a4f7f319-eb12-4838-be3a-d3bdb7e533fb
-  projectName: Snakazoid
+  projectName: Magnapillar
   organizationId: argarelon
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
